@@ -1,0 +1,59 @@
+{
+  "name": "hono-ai-chatbot",
+  "version": "1.0.0",
+  "description": "Hono middleware that adds the Asyntai AI chat assistant to every HTML page. It answers visitor questions from your own content, in 80+ languages. Works on Node.js, Bun, Deno and Cloudflare Workers.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "hono",
+    "hono-middleware",
+    "middleware",
+    "chatbot",
+    "ai-chatbot",
+    "ai",
+    "chat",
+    "chat-widget",
+    "live-chat",
+    "customer-support",
+    "cloudflare-workers",
+    "bun",
+    "deno",
+    "asyntai"
+  ],
+  "homepage": "https://asyntai.com/documentation/integrations/hono/",
+  "bugs": {
+    "url": "https://github.com/asyntai/hono-ai-chatbot/issues",
+    "email": "hello@asyntai.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asyntai/hono-ai-chatbot.git"
+  },
+  "author": "Asyntai <hello@asyntai.com> (https://asyntai.com)",
+  "license": "MIT",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.0"
+  },
+  "scripts": {
+    "test": "node --test tests/test_middleware.js"
+  },
+  "peerDependencies": {
+    "hono": ">=3.0.0"
+  },
+  "devDependencies": {
+    "hono": "^4.13.14"
+  }
+}
